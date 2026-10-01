@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Energy Data Visualisations</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="dashboard">
+		<h1>Energy Data Visualisations</h1>
+		<section class="chart-grid" aria-label="Charts">
+			<div class="chart" aria-label="Bar chart">
+				<div class="chart-visual" id="bar-chart"></div>
+				<h2>Bar chart: energy use for 55-inch TVs</h2>
+			</div>
+			<div class="chart" aria-label="Donut chart">
+				<div class="chart-visual" id="donut-chart"></div>
+				<h2>Donut chart: mean energy use by technology</h2>
+			</div>
+			<div class="chart" aria-label="Line chart">
+				<div class="chart-visual" id="line-chart"></div>
+				<h2>Line chart: spot electricity prices by region</h2>
+			</div>
+			<div class="chart" aria-label="Scatter plot">
+				<div class="chart-visual" id="scatter-chart"></div>
+				<h2>Scatter plot: energy consumption vs star rating</h2>
+			</div>
+		</section>
+	</main>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="load-data.js"></script>
+	<script src="charts/bar.js"></script>
+	<script src="charts/donut.js"></script>
+	<script src="charts/line.js"></script>
+	<script src="charts/scatter.js"></script>
+</body>
+</html>
